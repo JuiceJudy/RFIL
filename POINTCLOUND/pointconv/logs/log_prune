@@ -1,0 +1,127 @@
+[2023-05-12 16:57:06] load pruned weights
+[2023-05-12 16:57:09] PointConvDensityClsSsg(
+  (sa1): PointConvDensitySetAbstraction(
+    (mlp_convs): ModuleList(
+      (0): Conv2d(6, 12, kernel_size=(1, 1), stride=(1, 1))
+      (1): Conv2d(12, 12, kernel_size=(1, 1), stride=(1, 1))
+      (2): Conv2d(12, 25, kernel_size=(1, 1), stride=(1, 1))
+    )
+    (mlp_bns): ModuleList(
+      (0): BatchNorm2d(12, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (1): BatchNorm2d(12, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): BatchNorm2d(25, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (weightnet): WeightNet(
+      (mlp_convs): ModuleList(
+        (0): Conv2d(3, 8, kernel_size=(1, 1), stride=(1, 1))
+        (1): Conv2d(8, 8, kernel_size=(1, 1), stride=(1, 1))
+        (2): Conv2d(8, 16, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (mlp_bns): ModuleList(
+        (0): BatchNorm2d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (1): BatchNorm2d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (linear): Linear(in_features=400, out_features=25, bias=True)
+    (bn_linear): BatchNorm1d(25, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (densitynet): DensityNet(
+      (mlp_convs): ModuleList(
+        (0): Conv2d(1, 16, kernel_size=(1, 1), stride=(1, 1))
+        (1): Conv2d(16, 8, kernel_size=(1, 1), stride=(1, 1))
+        (2): Conv2d(8, 1, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (mlp_bns): ModuleList(
+        (0): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (1): BatchNorm2d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): BatchNorm2d(1, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+  )
+  (sa2): PointConvDensitySetAbstraction(
+    (mlp_convs): ModuleList(
+      (0): Conv2d(28, 25, kernel_size=(1, 1), stride=(1, 1))
+      (1): Conv2d(25, 25, kernel_size=(1, 1), stride=(1, 1))
+      (2): Conv2d(25, 51, kernel_size=(1, 1), stride=(1, 1))
+    )
+    (mlp_bns): ModuleList(
+      (0): BatchNorm2d(25, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (1): BatchNorm2d(25, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): BatchNorm2d(51, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (weightnet): WeightNet(
+      (mlp_convs): ModuleList(
+        (0): Conv2d(3, 8, kernel_size=(1, 1), stride=(1, 1))
+        (1): Conv2d(8, 8, kernel_size=(1, 1), stride=(1, 1))
+        (2): Conv2d(8, 16, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (mlp_bns): ModuleList(
+        (0): BatchNorm2d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (1): BatchNorm2d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (linear): Linear(in_features=816, out_features=51, bias=True)
+    (bn_linear): BatchNorm1d(51, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (densitynet): DensityNet(
+      (mlp_convs): ModuleList(
+        (0): Conv2d(1, 16, kernel_size=(1, 1), stride=(1, 1))
+        (1): Conv2d(16, 8, kernel_size=(1, 1), stride=(1, 1))
+        (2): Conv2d(8, 1, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (mlp_bns): ModuleList(
+        (0): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (1): BatchNorm2d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): BatchNorm2d(1, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+  )
+  (sa3): PointConvDensitySetAbstraction(
+    (mlp_convs): ModuleList(
+      (0): Conv2d(54, 51, kernel_size=(1, 1), stride=(1, 1))
+      (1): Conv2d(51, 102, kernel_size=(1, 1), stride=(1, 1))
+      (2): Conv2d(102, 204, kernel_size=(1, 1), stride=(1, 1))
+    )
+    (mlp_bns): ModuleList(
+      (0): BatchNorm2d(51, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (1): BatchNorm2d(102, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): BatchNorm2d(204, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (weightnet): WeightNet(
+      (mlp_convs): ModuleList(
+        (0): Conv2d(3, 8, kernel_size=(1, 1), stride=(1, 1))
+        (1): Conv2d(8, 8, kernel_size=(1, 1), stride=(1, 1))
+        (2): Conv2d(8, 16, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (mlp_bns): ModuleList(
+        (0): BatchNorm2d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (1): BatchNorm2d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (linear): Linear(in_features=3264, out_features=204, bias=True)
+    (bn_linear): BatchNorm1d(204, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (densitynet): DensityNet(
+      (mlp_convs): ModuleList(
+        (0): Conv2d(1, 16, kernel_size=(1, 1), stride=(1, 1))
+        (1): Conv2d(16, 8, kernel_size=(1, 1), stride=(1, 1))
+        (2): Conv2d(8, 1, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (mlp_bns): ModuleList(
+        (0): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (1): BatchNorm2d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (2): BatchNorm2d(1, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+  )
+  (fc1): Linear(in_features=204, out_features=512, bias=True)
+  (bn1): BatchNorm1d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (drop1): Dropout(p=0.7, inplace=False)
+  (fc2): Linear(in_features=512, out_features=256, bias=True)
+  (bn2): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (drop2): Dropout(p=0.7, inplace=False)
+  (fc3): Linear(in_features=256, out_features=40, bias=True)
+)
+[2023-05-12 16:58:06] Top-1 Accuracy: 0.05834683954619125
+[2023-05-12 16:58:06] Model Summary: 63177368.0 FLOPs, 1001434 parameters
+[2023-05-12 16:58:06] Save prune_runs/prune_test%.pt

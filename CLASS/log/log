@@ -1,0 +1,7 @@
+[2022-07-19 17:37:57] args:Namespace(arch='vgg_16_bn', batch_size=128, compress_rate=None, data_dir='G:\\data', dataset='CIFAR10', epochs=200, from_scratch=True, gpu='0', input_size=32, job_dir='C:\\Users\\huxf\\Desktop\\dyztmp\\RFF/', lr=0.0001, lr_decay_step='100', momentum=0.9, num_workers=1, resume='../pre_train_model/CIFAR-10/vgg_16_bn.pt', save_id=1, weight_decay=5e-05)
+[2022-07-19 17:37:57] loading checkpoint:../pre_train_model/CIFAR-10/vgg_16_bn.pt
+[2022-07-19 18:24:08] args:Namespace(arch='vgg_16_bn', batch_size=128, compress_rate=None, data_dir='G:\\data', dataset='CIFAR10', epochs=200, from_scratch=True, gpu='0', input_size=32, job_dir='C:\\Users\\huxf\\Desktop\\dyztmp\\RFF/', lr=0.0001, lr_decay_step='100', momentum=0.9, num_workers=1, resume='../pre_train_model/CIFAR-10/vgg_16_bn.pt', save_id=1, weight_decay=5e-05)
+[2022-07-19 18:24:08] loading checkpoint:../pre_train_model/CIFAR-10/vgg_16_bn.pt
+[2022-08-11 13:00:06] args:Namespace(arch='vgg_16_bn', batch_size=128, compress_rate=None, data_dir='G:\\data', dataset='CIFAR10', epochs=1, from_scratch=False, gpu='0', input_size=32, job_dir='C:\\Users\\huxf\\Desktop\\dyztmp\\RFF/', lr=0.001, lr_decay_step='1', momentum=0.9, num_workers=1, resume='../pre_train_model/CIFAR-10/vgg_16_bn.pt', save_id=1, weight_decay=0.0)
+[2022-08-11 13:00:06] ===> pruning layer 12
+[2022-08-11 13:00:07] loading checkpoint:../pre_train_model/CIFAR-10/vgg_16_bn.pt
